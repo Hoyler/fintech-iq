@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.login-principal{
+    width: 100vw;
+    height: 100vh;
+    background: #131118f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-left > h1 {
+    font-size: 3vw;
+    color:#f59e0b;
+}
+.login-image{
+    width: 22vw;
+}
+.login-right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+.login-card > h1{
+    color:#f59e0b;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+
+.text-form > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #1e1d2213;
+    color:#f0ffffde ;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.text-form > label {
+    color:#f0ffffde ;
+    margin-bottom: 10px;
+}
+
+.text-form > input::placeholder{
+    color:#000000b9;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 800;
+    letter-spacing: 3px;
+    color:#2b134b;
+    background: rgba(255, 255, 255, 0.377);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #f8bd56;
+}
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+

@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 24px;
+  }
+  
+  body {
+    
+    /* fallback for old browsers */
+   /* background-image: url(./img/wave-haikei.svg); */
+    background-image: url(./img/blob-scene-haikei\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .card-group {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+  }
+  .card-group-1{
+    position: absolute;
+    left: 26%;
+    top: 20%;
+  }
+
+  .card-group-2{
+    position: absolute;
+    left: 32%;
+    top: 20%;
+  }
+
+  .grow:hover{
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+
+  }
+
+
+  .card {
+    position: relative;
+    height: 200px;
+    width: 380px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+  }
+
+  .card-1{
+    background-color:grey;
+  }
+  
+  .card-2{
+    background-color: silver;
+  }
+
+  .card-3{
+    background-color:rgba(0, 0, 0, 0.596) ;
+  }
+  .logo img,
+  .chip img,
+  .number,
+  .name,
+  .from,
+  .to,
+  .ring {
+    position: absolute; /* All items inside card should have absolute position */
+  }
+  
+  .logo img {
+    top: 10px;
+    right: 40px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .chip img {
+    top: 15px;
+    left: 40px;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .number,
+  .name,
+  .from,
+  .to {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .number {
+    left: 40px;
+    bottom: 65px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .name {
+    font-size: 0.5rem;
+    left: 40px;
+    bottom: 35px;
+  }
+  
+  .from {
+    font-size: 0.5rem;
+    bottom: 35px;
+    right: 110px;
+  }
+  
+  .to {
+    font-size: 0.5rem;
+    bottom: 35px;
+    right: 40px;
+  }
+  
+  /* The two rings on the card background */
+  .ring {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: transparent;
+    border: 50px solid rgba(255, 255, 255, 0.1);
+    bottom: -250px;
+    right: -250px;
+    box-sizing: border-box;
+  }
+  
+.h1-text h1{
+    font-size: 1rem;
+    margin-left: 12%;
+    padding-top: 1%;
+}
+
+.cartao{
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8%;
+  flex-wrap: wrap;
+}
+
+.cards-diminuir-tamanho:hover{
+  -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.233);
+
+
+}
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-right: 5%;
+  display: flex;
+  
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b5b5b575;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #00000053;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #b5b5b549;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+
+
+
+.card-saldo{
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+  margin-top: 6.8%;
+  position: relative;
+}
+
+.card-saldo p:hover{
+  transition: 0.7ms;
+  color: rgba(0, 128, 0, 0.603);
+}
+
+@media(max-width:1360px){
+
+  .card-saldo{
+    width: 19rem;
+    height: 3rem;
+    margin-left: 10%;
+    margin-top: 18%;
+    
+  }
+
+  
+  
+
+}
+
+@media(max-width:1270px){
+  
+  
+  .card-saldo{
+    width: 19rem;
+    height: 3rem;
+    margin-top: 20%;
+
+  }
+ 
+}
+
+@media(max-width:1100px){
+  
+  
+  .card-saldo{
+    width: 19rem;
+    height: 3rem;
+    margin-top: 22%;
+
+  }
+
+}
+@media(max-width:1050px){
+  
+  
+  .card-saldo{
+    width: 19rem;
+    height: 3rem;
+    margin-top: 26%;
+
+  }
+ 
+}
+
+
+@media(max-width:880px){
+  
+  
+  .card-saldo{
+    width: 19rem;
+    height: 3rem;
+    margin-top: 33%;
+
+  }
+}
+
